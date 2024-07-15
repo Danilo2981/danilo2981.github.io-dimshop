@@ -96,7 +96,7 @@ section {
     height: 100vh;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 5px;
-    background-image: url("/resources/img/mission.jpg");
+    background-image: url("../resources/img/mission.jpg");
     background-repeat: none;
     background-size: cover;
 }
