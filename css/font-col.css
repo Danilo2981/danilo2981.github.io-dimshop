@@ -1,0 +1,36 @@
+:root {
+    --color-primary: #2b3a42;
+    --color-secondary: #3f5765;
+    --color-accent: #bdd5ea;
+    --color-light: #e3efef;
+    --color-white: #ffffff;
+    
+    --font-heading: 'Book Antiqua', serif;
+    --font-subheading: 'Garamond', serif;
+    --font-body: 'Garamond', serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+h4, h5, h6 {
+    font-family: var(--font-subheading);
+    color: var(--color-secondary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: var(--color-accent);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+@media only screen and (max-width: 760px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 10rem;
+        width: 100%;
+        z-index: 100;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        padding: 10px 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+main {
+    background-color: var(--color-light);
+
+}
+
+section {
+    background-color: var(--color-white);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+#mission {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-image: url("/resources/img/mission.jpg");
+    background-repeat: none;
+    background-size: cover;
+}
+
+#mission .box {
+    background-color: var(--color-white);
+    opacity: 0.95;
+    border: solid 0.1rem #979797;
+    border-radius: 1rem 0 0 0;
+    box-shadow: 0.5rem;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+#mission h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+#mission ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#mission ul li {
+    margin-bottom: 10px;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+
+#products {
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background-color: var(--color-light);
+}
+
+#products h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.product-item {
+    flex: 1 1 calc(20% - 1.25rem);
+    background: var(--color-white);
+    padding: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0,0,0,0.1);
+    border-radius: 0.3125rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-item .img-container {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.product-item .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.625rem;
+}
+
+.product-item h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 0.625rem;
+}
+
+.product-item p {
+    font-family: var(--font-body);
+    color: var(--color-secondary);
+    margin-bottom: 0.3125rem;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%;
+    }
+}
+
+#team {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--color-light);
+}
+
+#team h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: var(--color-white);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team-item .img-container {
+    display: inline-flex;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-item .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-item h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.team-item p {
+    font-family: var(--font-body);
+    color: var(--color-secondary);
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .team-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-item {
+        flex: 1 1 100%;
+    }
+}
+
+#contact {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--color-light);
+}
+
+#contact h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: var(--color-white);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.contact-item h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-item ul li {
+    font-family: var(--font-body);
+    color: var(--color-secondary);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .contact-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        flex: 1 1 100%;
+    }
+}
+
